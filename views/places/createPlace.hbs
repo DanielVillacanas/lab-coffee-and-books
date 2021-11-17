@@ -1,0 +1,25 @@
+<h1>Create Place</h1>
+<form action="/places/create" method="post">
+
+  <label for="">
+    Name :
+    <input type="text" name="name" placeholder="Name of the place" />
+  </label>
+
+  <select name="type">
+    <option value="coffee shop">Coffee Shop</option>
+    <option value="bookstore">Bookstore</option>
+  </select>
+
+  <label for="">
+    Longitude :
+    <input type="number" step="any" name="longitude" />
+  </label>
+
+  <label for="">
+    Latitude :
+    <input type="number" step="any" name="latitude" />
+  </label>
+
+  <button type="submit">Create Place</button>
+</form>

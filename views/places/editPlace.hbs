@@ -1,0 +1,28 @@
+<h1>Edit Place</h1>
+
+<form action="/places/editPlace/{{this._id}}" method="post">
+
+  <label for="">
+    Name :
+    <input type="text" name="name" value={{this.name}} />
+  </label>
+
+  <select name="type">
+    <option value="coffee shop">Coffee Shop</option>
+    <option value="bookstore">Bookstore</option>
+  </select>
+
+  <label for="">
+    Longitude :
+    <input type="number" step="any" name="longitude" value={{this.location.coordinates.[0]}} />
+  </label>
+
+  <label for="">
+    Latitude :
+    <input type="number" step="any" name="latitude" value={{this.location.coordinates.[1]}} />
+  </label>
+
+  <button type="submit">Edit Place</button>
+  <a href="/places/delete/{{this._id}}">Delete Place</a>
+</form>
+
